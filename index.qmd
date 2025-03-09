@@ -15,11 +15,16 @@ about:
       - icon: envelope
         text: Email
         href: mailto:rishitjakharia@gmail.com
-      - icon: "fa-bold"
+      - icon: "fa-k"
         text: Kaggle
         href: https://kaggle.com/rishitjakharia/
-      - text: Bento
+      - icon: "fa-B"
+        text: Bento
         href: https://bento.me/rishit-jakharia
 ---
 
-Quarto template Text!
+I am currently a 3rd year student pursuing my undergraduate degree in Computer Science at IIT Delhi. A deep-seated passion for Machine Learning and Deep Learning fuels my academic journey. 
+
+Beyond the practical aspects, I am drawn to the mathematical foundations that underpin computer science, finding beauty and inspiration in the elegant logic and structures that form the backbone of our digital world.
+
+As an enthusiastic learner, I am not just interested in keeping up with the latest advancements but actively engaging with them. I thrive on challenges and view each one as an opportunity to expand my knowledge and skills.
