@@ -15,7 +15,7 @@ about:
       - icon: envelope
         text: Email
         href: mailto:rishitjakharia@gmail.com
-      - icon: "fa-k"
+      - icon: 
         text: Kaggle
         href: https://kaggle.com/rishitjakharia/
       - icon: "fa-B"
