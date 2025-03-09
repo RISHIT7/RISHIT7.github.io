@@ -1,0 +1,148 @@
+<h1 class="unnumbered" id="abstract">Abstract</h1>
+<p>
+  In this blog post, I will share my journey of developing a Python script that
+  utilizes transfer learning to train and compare LSTM and TCN Models on the
+  UCI-HAR dataset. The goal was to achieve a validation accuracy of 96% or
+  higher, using PyTorch. The journey was filled with trials, errors, laughter,
+  and a lot of learning. It involved experimenting with different architectures,
+  trying out a few different loss functions, fine-tuning, and hyperparameters,
+  of course.
+</p>
+<h1 class="unnumbered" id="introduction">Introduction</h1>
+<p>
+  Human Activity Recognition (HAR) is a key area in wearable technology and
+  smart systems. The UCI-HAR dataset serves as a benchmark for testing machine
+  learning and deep learning models to classify activities like walking,
+  sitting, and climbing stairs based on smartphone sensor data
+  <a href="#ref:uci_har">[1]</a>.
+</p>
+<h1 class="unnumbered" id="the-uci-har-dataset">The UCI-HAR Dataset</h1>
+<p>
+  The UCI-HAR dataset was collected from 30 volunteers (ages 19–48) performing
+  six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING,
+  STANDING, LAYING) while wearing a smartphone on their waist. The smartphone’s
+  accelerometer and gyroscope recorded 3-axis linear acceleration and angular
+  velocity at 50Hz. Data was manually labeled using video recordings and split
+  into training (70%) and test (30%) sets <a href="#ref:uci_har">[1]</a>.
+</p>
+<div class="center">
+  <p><img src="images/UCI_HAR/intro_abstract.png" style="width: 5cm" alt="image" /></p>
+</div>
+<h1 class="unnumbered" id="model-architectures">Model Architectures</h1>
+<h2 class="unnumbered" id="model-selection-process">Model Selection Process</h2>
+<p>
+  The first step in the model selection process was to decide which
+  architectures to try and build a model on for the UCI-HAR dataset. Upon
+  further reading the literature on temporal data and machine learning
+  accounting for temporal relationships, I boiled the choice down to a few
+  architecture components like the TCN <a href="#ref:tcn_paper">[2]</a>,
+  ConvLSTM <a href="#ref:convlstm_paper">[3]</a>, LRCN
+  <a href="#ref:lrcn_paper">[4]</a>, and Self-Attention
+  <a href="#ref:self_attention_paper">[5]</a>.
+</p>
+<h2 class="unnumbered" id="setting-up-the-environment">
+  Setting up the Environment
+</h2>
+<p>
+  All the code was tested on Kaggle using the provided GPU, ‘GPU P100‘. Kaggle
+  has a free cloud service that provides a coding environment for AI
+  researchers/enthusiasts. It comes with GPU support and is a great tool for
+  anyone who wants to experiment with machine learning and deep learning without
+  setting up their own environment.
+</p>
+<p>To run your code in Kaggle, follow these steps:</p>
+<ul>
+  <li><p>Go to the Kaggle website and sign in with your Google account.</p></li>
+  <li>
+    <p>
+      Click the ‘plus‘ on the top left corner and then press ‘New Notebook‘.
+    </p>
+  </li>
+  <li>
+    <p>
+      You can now write your code in the cells. You can add new cells by
+      clicking on ‘+ Code‘ or ‘+ Markdown‘ for code and text cells respectively.
+    </p>
+  </li>
+  <li>
+    <p>
+      To run a cell, click on the play button on the left side of the cell or
+      press ‘Shift+Enter‘.
+    </p>
+  </li>
+  <li>
+    <p>
+      To use a GPU, look for ‘Session options‘
+      <span class="math inline">→</span> ‘Accelerator‘, and then restart the
+      session.
+    </p>
+  </li>
+</ul>
+<h1 class="unnumbered" id="preprocessing-the-data">Preprocessing the Data</h1>
+<p>
+  <strong>GitHub Code:</strong>
+  <a
+    href="https://github.com/RISHIT7/Time-Series-Modeling/blob/main/notebooks/UCI-HAR-blog.ipynb"
+    >UCI-HAR</a
+  >
+</p>
+<h1 class="unnumbered" id="references">References</h1>
+<ul>
+  <li>
+    <div id="ref:uci_har">
+      <p>[1]</p>
+    </div>
+    <p>
+      UCI-HAR Dataset:
+      <a
+        href="https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones"
+        >Human Activity Recognition Using Smartphones</a
+      >
+    </p>
+  </li>
+  <li>
+    <div id="ref:tcn_paper">
+      <p>[2]</p>
+    </div>
+    <p>
+      TCN Paper:
+      <a href="https://arxiv.org/abs/1803.01271"
+        >An Empirical Evaluation of Generic Convolutional and Recurrent Networks
+        for Sequence Modeling</a
+      >
+    </p>
+  </li>
+  <li>
+    <div id="ref:convlstm_paper">
+      <p>[3]</p>
+    </div>
+    <p>
+      ConvLSTM Paper:
+      <a href="https://arxiv.org/abs/1506.04214"
+        >Convolutional LSTM Network: A Machine Learning Approach for
+        Precipitation Nowcasting</a
+      >
+    </p>
+  </li>
+  <li>
+    <div id="ref:lrcn_paper">
+      <p>[4]</p>
+    </div>
+    <p>
+      LRCN Paper:
+      <a href="https://arxiv.org/abs/1411.4389"
+        >Long-term Recurrent Convolutional Networks for Visual Recognition and
+        Description</a
+      >
+    </p>
+  </li>
+  <li>
+    <div id="ref:self_attention_paper">
+      <p>[5]</p>
+    </div>
+    <p>
+      Self-Attention Paper:
+      <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a>
+    </p>
+  </li>
+</ul>
