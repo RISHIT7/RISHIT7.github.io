@@ -15,9 +15,10 @@ about:
       - icon: envelope
         text: Email
         href: mailto:rishitjakharia@gmail.com
-      - text: "K"
+      - icon: "fa-bold"
+        text: Kaggle
         href: https://kaggle.com/rishitjakharia/
-      - text: "B"
+      - text: Bento
         href: https://bento.me/rishit-jakharia
 ---
 
