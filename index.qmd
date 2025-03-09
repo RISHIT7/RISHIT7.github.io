@@ -1,5 +1,26 @@
 ---
-title: Quarto Template
+title: Rishit Jakharia
+image: images/rishit.jpg
+about:
+    template: trestles
+    image-width: 10cm
+    image-shape: rounded
+    links:
+      - icon: github
+        text: Github
+        href: https://github.com/RISHIT7
+      - icon: linkedin
+        text: linkedin
+        href: https://linkedin.com/in/rishit-jakharia/
+      - icon: envelope
+        text: Email
+        href: mailto:rishitjakharia@gmail.com
+      - image: https://cdn.iconscout.com/icon/free/png-256/free-kaggle-3628869-3030009.png
+        text: Kaggle
+        href: https://kaggle.com/rishitjakharia/
+      - image: images/naruto.jpeg
+        text: Bento
+        href: https://bento.me/rishit-jakharia
 ---
 
 Quarto template Text!
