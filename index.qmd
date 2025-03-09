@@ -15,12 +15,10 @@ about:
       - icon: envelope
         text: Email
         href: mailto:rishitjakharia@gmail.com
-      - text: Kaggle
+      - text: "K"
         href: https://kaggle.com/rishitjakharia/
-        image: https://cdn.iconscout.com/icon/free/png-256/free-kaggle-3628869-3030009.png
-      - text: Bento
+      - text: "B"
         href: https://bento.me/rishit-jakharia
-        image: images/naruto.jpeg
 ---
 
 Quarto template Text!
