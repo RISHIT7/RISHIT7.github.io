@@ -4,8 +4,10 @@
 
 $font-family: "Roboto", sans-serif;
 $font-family-serif: "Roboto", sans-serif;
+$link-color: #248CFC;
 
 /*-- scss:rules --*/
+
 kbd,
 .kbd {
     background-color: #f6f5f5 !important;
@@ -15,9 +17,6 @@ kbd,
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-
-/* Light mode customizations */
-$link-color: #248CFC;
 
 .light-mode { display: block; }
 .dark-mode { display: none; }

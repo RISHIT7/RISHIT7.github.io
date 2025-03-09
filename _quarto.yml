@@ -17,7 +17,9 @@ format:
     theme:
       light: [litera, styles-light.scss]
       dark: [darkly, styles-dark.scss]
-    highlight-style: a11y-dark
+    highlight-style: 
+      light: github
+      dark: atom-one-dark
     mainfont: "Roboto"
     code-copy: true
     code-overflow: wrap
