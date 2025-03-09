@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Rishit"
+  title: "Rishit Jakharia"
   navbar:
     right:
       - href: index.qmd
@@ -15,7 +15,8 @@ website:
 format:
   html:
     theme:
-      light: [litera, styles.scss]
+      light: [litera, styles-light.scss]
+      dark: [darkly, styles-dark.scss]
     highlight-style: a11y-dark
     mainfont: "Roboto"
     code-copy: true
