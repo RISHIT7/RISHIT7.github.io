@@ -4,22 +4,16 @@
 
 $font-family: "Roboto", sans-serif;
 $font-family-serif: "Roboto", sans-serif;
-$link-color: #1E90FF;
+$primary: #2c2c2c;
 
 /*-- scss:rules --*/
 
 kbd,
 .kbd {
-    background-color: #2e2e2e !important;
-}
-
-body {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #222222 !important;
 }
 
 .navbar {
-    background-color: #1f1f1f;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
